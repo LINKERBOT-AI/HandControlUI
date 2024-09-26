@@ -1,0 +1,11 @@
+debug/customheaderview.o
+debug/main.o
+debug/robot_hand_ui.o
+debug/switch_button.o
+debug/tcpcommunication_hand.o
+debug/qrc_pic.o
+debug/qrc_qss.o
+debug/moc_customheaderview.o
+debug/moc_robot_hand_ui.o
+debug/moc_switch_button.o
+debug/moc_tcpcommunication_hand.o

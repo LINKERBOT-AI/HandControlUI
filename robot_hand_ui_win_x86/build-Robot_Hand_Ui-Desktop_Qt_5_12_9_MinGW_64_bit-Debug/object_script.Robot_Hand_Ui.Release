@@ -1,0 +1,11 @@
+release/customheaderview.o
+release/main.o
+release/robot_hand_ui.o
+release/switch_button.o
+release/tcpcommunication_hand.o
+release/qrc_pic.o
+release/qrc_qss.o
+release/moc_customheaderview.o
+release/moc_robot_hand_ui.o
+release/moc_switch_button.o
+release/moc_tcpcommunication_hand.o

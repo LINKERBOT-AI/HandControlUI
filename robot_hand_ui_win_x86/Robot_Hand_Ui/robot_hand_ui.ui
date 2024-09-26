@@ -1,0 +1,2308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Robot_Hand_Ui</class>
+ <widget class="QMainWindow" name="Robot_Hand_Ui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1740</width>
+    <height>1227</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Robot_Hand_Ui</string>
+  </property>
+  <widget class="QWidget" name="frame_background">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame_background_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="3" column="3">
+        <spacer name="verticalSpacer_16">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="5">
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="6">
+        <spacer name="verticalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="6" column="6">
+        <spacer name="verticalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>50</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="8" column="6">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>2</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="6">
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="2" colspan="3">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_index_swing_slider">
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>食指侧摆</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <spacer name="verticalSpacer_15">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>70</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="5">
+          <widget class="QLabel" name="label_pinkie_swing_slider">
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>小手指侧摆</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_thumb_swing_slider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>拇指侧摆</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="6">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="label_third_swing_slider">
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>无名指侧摆</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <spacer name="verticalSpacer_14">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>80</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0" colspan="6">
+          <widget class="QFrame" name="frame_12">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>170</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>170</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QSlider" name="verticalSlider_thumb_swing">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>430</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::NoTicks</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_index_swing">
+            <property name="geometry">
+             <rect>
+              <x>520</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_middle_swing">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_third_swing">
+            <property name="geometry">
+             <rect>
+              <x>690</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_pinkie_swing">
+            <property name="geometry">
+             <rect>
+              <x>790</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>400</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="label_middle_swing_slider">
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>中指侧摆</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="6">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_thumb_swing">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>拇指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_thumb_swing_out">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_thumb_swing_in">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <zorder>button_thumb_swing_out</zorder>
+           <zorder>button_thumb_swing_in</zorder>
+           <zorder>label_thumb_swing</zorder>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_finger_swing">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>食指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_index_swing_out">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_index_swing_in">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <zorder>button_index_swing_out</zorder>
+           <zorder>button_index_swing_in</zorder>
+           <zorder>label_finger_swing</zorder>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_middle_swing_in">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_middle_swing_out">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_middle_swing">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>中指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_third_swing_in">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_third_swing_out">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_third_swing">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>无名指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_pinkie_swing">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>小手指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_pinkie_swing_out">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_pinkie_swing_in">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <zorder>button_pinkie_swing_out</zorder>
+           <zorder>button_pinkie_swing_in</zorder>
+           <zorder>label_pinkie_swing</zorder>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="6" rowspan="2">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>100</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <spacer name="verticalSpacer_11">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="Hand_Close">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Hand_Open">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_allfinger">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>五指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>2</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_thumb_straight">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_thumb_roll">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_thumb">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>拇指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <zorder>button_thumb_roll</zorder>
+           <zorder>button_thumb_straight</zorder>
+           <zorder>label_thumb</zorder>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>2</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_index">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>食指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_index_roll">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_index_straight">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <zorder>button_index_roll</zorder>
+           <zorder>button_index_straight</zorder>
+           <zorder>label_index</zorder>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>2</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_middle_roll">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_middle_straight">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_middle">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>中指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>2</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_third_roll">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_third">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>无名指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_third_straight">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <zorder>button_third_roll</zorder>
+           <zorder>button_third_straight</zorder>
+           <zorder>label_third</zorder>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>2</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_pinkie_roll">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_pinkie">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>20</y>
+              <width>54</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>小手指</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_pinkie_straight">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>325</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{border-image:url(:/res/pic/slices/pic_background.png)}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <zorder>button_pinkie_roll</zorder>
+           <zorder>button_pinkie_straight</zorder>
+           <zorder>label_pinkie</zorder>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>2</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="1">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>240</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="7" column="3" rowspan="2" colspan="2">
+        <widget class="QFrame" name="frame_15">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_left_switch">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>25</y>
+            <width>128</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe 黑体 Std R</family>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>左手</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <property name="indent">
+           <number>28</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_right_switch">
+          <property name="geometry">
+           <rect>
+            <x>263</x>
+            <y>25</y>
+            <width>128</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe 黑体 Std R</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>右手</string>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <property name="indent">
+           <number>30</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9deg_switch">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>100</y>
+            <width>128</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe 黑体 Std R</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>9自由度</string>
+          </property>
+          <property name="indent">
+           <number>20</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16deg_switch">
+          <property name="geometry">
+           <rect>
+            <x>416</x>
+            <y>100</y>
+            <width>128</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe 黑体 Std R</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>16自由度</string>
+          </property>
+          <property name="indent">
+           <number>20</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10deg_switch">
+          <property name="geometry">
+           <rect>
+            <x>263</x>
+            <y>100</y>
+            <width>128</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe 黑体 Std R</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>10自由度</string>
+          </property>
+          <property name="indent">
+           <number>20</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_connect_state">
+          <property name="geometry">
+           <rect>
+            <x>416</x>
+            <y>25</y>
+            <width>128</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe 黑体 Std R</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>连接状态</string>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <property name="indent">
+           <number>30</number>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="4" column="3" rowspan="2" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_index_roll_slider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>食指弯曲</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="6">
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>100</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>100</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_thumb_roll_slider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>10</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>拇指弯曲</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="label_middle_roll_slider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>中指弯曲</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <spacer name="verticalSpacer_17">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>50</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="label_third_roll_slider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>无名指弯曲</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="6">
+          <widget class="QFrame" name="frame_13">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>210</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QSlider" name="verticalSlider_thumb_roll">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>40</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_index_roll">
+            <property name="geometry">
+             <rect>
+              <x>210</x>
+              <y>40</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_middle_roll">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>40</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_third_roll">
+            <property name="geometry">
+             <rect>
+              <x>390</x>
+              <y>40</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_pinkie_roll">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>40</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>ADMUI3Lg</family>
+             </font>
+            </property>
+            <property name="maximum">
+             <number>250</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="QLabel" name="label_pinkie_roll_slider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>小手指弯曲</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="6">
+          <widget class="QFrame" name="frame_16">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>540</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QSlider" name="verticalSlider_thumb_tip">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_index_tip">
+            <property name="geometry">
+             <rect>
+              <x>210</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_middle_tip">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_third_tip">
+            <property name="geometry">
+             <rect>
+              <x>390</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="verticalSlider_pinkie_tip">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>0</y>
+              <width>20</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_thumb_tip_slider">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>175</y>
+              <width>91</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe 黑体 Std R</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>拇指尖</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_index_tip_slider">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>175</y>
+              <width>91</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe 黑体 Std R</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>食指尖</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_middle_tip_slider">
+            <property name="geometry">
+             <rect>
+              <x>290</x>
+              <y>175</y>
+              <width>91</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe 黑体 Std R</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>中指尖</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_third_tip_slider">
+            <property name="geometry">
+             <rect>
+              <x>370</x>
+              <y>175</y>
+              <width>111</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe 黑体 Std R</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>无名指尖</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_pinkie_tip_slider">
+            <property name="geometry">
+             <rect>
+              <x>470</x>
+              <y>175</y>
+              <width>111</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe 黑体 Std R</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>小手指尖</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="3" column="6">
+          <widget class="QFrame" name="frame_17">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QSlider" name="verticalSlider_thumb_rotation">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>0</y>
+              <width>16</width>
+              <height>166</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_thumb_rotation_slider">
+            <property name="geometry">
+             <rect>
+              <x>15</x>
+              <y>175</y>
+              <width>111</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Adobe 黑体 Std R</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>拇指纵摆</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0" rowspan="3" colspan="3">
+        <widget class="QFrame" name="frame_14">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>750</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QTableWidget" name="tableWidget_hand_data">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>661</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe 黑体 Std R</family>
+           </font>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="read_data">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>121</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>读取数据</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="7" column="6">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="TCP_Connect_Stop">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+             <horstretch>164</horstretch>
+             <verstretch>164</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>164</width>
+             <height>164</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>164</width>
+             <height>164</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">##background-color:rgb(47,49,82);</string>
+           </property>
+           <property name="text">
+            <string>停止</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="TCP_Connect_Start">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+             <horstretch>164</horstretch>
+             <verstretch>164</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>164</width>
+             <height>164</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>164</width>
+             <height>164</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Adobe 黑体 Std R</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">##background-color:rgb(47,49,82);</string>
+           </property>
+           <property name="text">
+            <string>开始</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Ignored</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1740</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

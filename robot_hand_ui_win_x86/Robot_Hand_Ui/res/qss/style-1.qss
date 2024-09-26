@@ -1,0 +1,75 @@
+/**
+    该页面为机械手操作界面
+*/
+
+
+/*操作界面背景*/
+#frame_background_2{
+border-image:url(:/res/pic/slices/background_frame.png);
+}
+
+/*登录背景*/
+#frame_login{background-color:#ffffff}
+
+/*右侧图片*/
+#frame_pic{
+    background-image:url(:/res/pic/1.png);
+
+}
+
+/*按钮-TCP_Connect_Start*/
+#TCP_Connect_Start{
+    color:#70889E;
+    border: none;
+    background-color:#2f3152;
+    border-radius: 5px;
+}
+/*按钮-TCP_Connect_Start-鼠标悬停*/
+#TCP_Connect_Start:hover{
+    color:#FFFFFF;
+    border: none;
+    background-color:#1f8efa;
+    border-radius: 5px;
+}
+/*按钮-登录-鼠标按下*/
+#Start_Control:pressed{
+    color:#ffffff;
+    border: none;
+    background-color:#fd6c92;
+    border-radius: 5px;
+}
+
+/*按钮-TCP_Connect_Stop*/
+#TCP_Connect_Stop{
+    color:#70889E;
+    border: none;
+    background-color:#2f3152;
+    border-radius: 5px;
+}
+/*按钮-TCP_Connect_Stop-鼠标悬停*/
+#TCP_Connect_Stop:hover{
+    color:#FFFFFF;
+    border: none;
+    background-color:#1f8efa;
+    border-radius: 5px;
+}
+
+/*按钮-read_data*/
+#read_data{
+    color:#FFFFFF;
+    border: none;
+    background-color:#2F3B52;
+    border-radius: 0px;
+}
+/*按钮-read_data-鼠标悬停*/
+#read_data:hover{
+    color:#FFFFFF;
+    border: none;
+    background-color:#20293C;
+    border-radius: 0px;
+}
+
+
+
+
+
