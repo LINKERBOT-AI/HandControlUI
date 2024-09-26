@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/pic/slices/background_frame.png</file>
+        <file>res/pic/slices/pic_background.png</file>
+        <file>res/pic/slices/pic_background_2.png</file>
+        <file>res/pic/slices/pic_background_3.png</file>
+        <file>res/pic/slices/pic_left.png</file>
+        <file>res/pic/slices/pic_right.png</file>
+        <file>res/pic/slices/Rectangle 4(1).png</file>
+        <file>res/pic/slices/Rectangle 4(2).png</file>
+        <file>res/pic/slices/Rectangle 4(3).png</file>
+        <file>res/pic/slices/Rectangle 4.png</file>
+        <file>res/pic/slices/Rectangle 4@2x(1).png</file>
+        <file>res/pic/slices/Rectangle 4@2x(2).png</file>
+        <file>res/pic/slices/Rectangle 4@2x(3).png</file>
+        <file>res/pic/slices/Rectangle 4@2x.png</file>
+        <file>res/pic/slices/switch.png</file>
+        <file>res/pic/slices/switch_selected.png</file>
+    </qresource>
+</RCC>
